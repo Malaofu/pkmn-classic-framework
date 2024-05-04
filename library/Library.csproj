@@ -1,172 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{408EFC7E-C6B0-4160-8628-2679E34385CE}</ProjectGuid>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PkmnFoundations</RootNamespace>
     <AssemblyName>PkmnFoundations.Library</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <Prefer32Bit>false</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyTitle>library</AssemblyTitle>
+    <Company>Microsoft</Company>
+    <Product>library</Product>
+    <Copyright>Copyright © Microsoft 2011</Copyright>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
-    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.6.9.8\lib\net45\MySql.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.configuration" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.SQLite, Version=1.0.115.5, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\lib\net46\System.Data.SQLite.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.SQLite.EF6, Version=1.0.115.5, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.115.5\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.SQLite.Linq, Version=1.0.115.5, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.115.5\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <PackageReference Include="MySql.Data" Version="6.10.7" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.115.5" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.115.5" />
+    <PackageReference Include="System.Diagnostics.EventLog" Version="4.7.0" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Data\Database.cs" />
-    <Compile Include="Data\DatabaseExtender.cs" />
-    <Compile Include="Data\DataMysql.cs" />
-    <Compile Include="Data\DataSqlite.cs" />
-    <Compile Include="Data\MySqlDatabaseExtender.cs" />
-    <Compile Include="Data\SqlDatabaseExtender.cs" />
-    <Compile Include="Pokedex\Ability.cs" />
-    <Compile Include="Pokedex\Evolution.cs" />
-    <Compile Include="Pokedex\FormAbilities.cs" />
-    <Compile Include="Pokedex\FormStats.cs" />
-    <Compile Include="Pokedex\Item.cs" />
-    <Compile Include="Pokedex\Location.cs" />
-    <Compile Include="Pokedex\Move.cs" />
-    <Compile Include="Pokedex\Pokedex.cs" />
-    <Compile Include="Pokedex\PokedexRecordBase.cs" />
-    <Compile Include="Pokedex\Region.cs" />
-    <Compile Include="Pokedex\Ribbon.cs" />
-    <Compile Include="Pokedex\Species.cs" />
-    <Compile Include="Pokedex\Family.cs" />
-    <Compile Include="Pokedex\Form.cs" />
-    <Compile Include="Pokedex\Type.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Wfc\BanStatus.cs" />
-    <Compile Include="Wfc\BattleSubwayPokemon5.cs" />
-    <Compile Include="Wfc\BattleSubwayProfile5.cs" />
-    <Compile Include="Wfc\BattleSubwayRecord5.cs" />
-    <Compile Include="Wfc\BattleTowerPokemon4.cs" />
-    <Compile Include="Wfc\BattleTowerPokemonBase.cs" />
-    <Compile Include="Wfc\BattleTowerProfileBase.cs" />
-    <Compile Include="Wfc\BattleTowerRecord4.cs" />
-    <Compile Include="Wfc\BattleTowerProfile4.cs" />
-    <Compile Include="Wfc\BattleTowerRecordBase.cs" />
-    <Compile Include="Wfc\BattleVideoHeader4.cs" />
-    <Compile Include="Wfc\BattleVideoHeader5.cs" />
-    <Compile Include="Wfc\BattleVideoRecord4.cs" />
-    <Compile Include="Wfc\BattleVideoRecord5.cs" />
-    <Compile Include="Support\BinarySerializableBase.cs" />
-    <Compile Include="Wfc\BoxRecord4.cs" />
-    <Compile Include="Structures\ByteStatValues.cs" />
-    <Compile Include="Structures\ContestStatValues.cs" />
-    <Compile Include="Wfc\DressupRecord4.cs" />
-    <Compile Include="Structures\Format.cs" />
-    <Compile Include="Wfc\GtsRecord5.cs" />
-    <Compile Include="Structures\Enums.cs" />
-    <Compile Include="Wfc\GtsRecord4.cs" />
-    <Compile Include="Wfc\GtsRecordBase.cs" />
-    <Compile Include="Structures\IvStatValues.cs" />
-    <Compile Include="Structures\MoveSlot.cs" />
-    <Compile Include="Wfc\MusicalRecord5.cs" />
-    <Compile Include="Structures\Pokemon4.cs" />
-    <Compile Include="Structures\Pokemon5.cs" />
-    <Compile Include="Structures\PokemonBase.cs" />
-    <Compile Include="Structures\IntStatValues.cs" />
-    <Compile Include="Structures\PokemonParty4.cs" />
-    <Compile Include="Structures\PokemonParty5.cs" />
-    <Compile Include="Structures\PokemonPartyBase.cs" />
-    <Compile Include="Structures\StatValues.cs" />
-    <Compile Include="Structures\StatValuesBase.cs" />
-    <Compile Include="Structures\TrainerMemo.cs" />
-    <Compile Include="Wfc\TrainerProfile4.cs" />
-    <Compile Include="Wfc\TrainerProfile5.cs" />
-    <Compile Include="Wfc\TrainerProfileBase.cs" />
-    <Compile Include="Wfc\TrainerProfilePlaza.cs" />
-    <Compile Include="Wfc\TrainerRankings.cs" />
-    <Compile Include="Support\AssertHelper.cs" />
-    <Compile Include="Support\EncodedString4.cs" />
-    <Compile Include="Support\EncodedString5.cs" />
-    <Compile Include="Support\EncodedStringBase.cs" />
-    <Compile Include="Support\EnumerableExtender.cs" />
-    <Compile Include="Support\GameSyncUtils.cs" />
-    <Compile Include="Support\Indexer1d.cs" />
-    <Compile Include="Support\LazyKeyValuePair.cs" />
-    <Compile Include="Support\LocalizedString.cs" />
-    <Compile Include="Support\LogHelper.cs" />
-    <Compile Include="Support\StreamExtender.cs" />
-    <Compile Include="Support\StringHelper.cs" />
-    <Compile Include="Support\TrendyPhrase4.cs" />
-    <Compile Include="Support\TrendyPhrase5.cs" />
-    <Compile Include="Support\TrendyPhraseBase.cs" />
-    <Compile Include="Support\ValidationSummary.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
-    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
-    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
-  </Target>
-  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
-  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

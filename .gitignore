@@ -6,6 +6,7 @@
 [Rr]elease/
 [Bb]in/
 [Pp]ackages/
+obj/
 .DS_Store
 ._.DS_Store
 ._*
