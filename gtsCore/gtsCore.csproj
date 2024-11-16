@@ -16,7 +16,6 @@
   <ItemGroup>
     <ProjectReference Include="..\GamestatsBase\GamestatBaseCore\GamestatsBaseCore.csproj" />
     <ProjectReference Include="..\library\Library.csproj" />
-    <ProjectReference Include="..\pkmn-classic-framework.ServiceDefaults\pkmn-classic-framework.ServiceDefaults.csproj" />
   </ItemGroup>
 
 </Project>

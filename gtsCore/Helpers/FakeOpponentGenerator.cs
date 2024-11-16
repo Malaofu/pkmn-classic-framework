@@ -61,7 +61,7 @@ public class FakeOpponentGenerator
 
             case 0:
                 record.Party[0] = factory.CreatePokemon(pokedex,
-                    129, // Magikarp
+                    129, 0, // Magikarp
                     3133, // Cheri
                     [
                         150, // Splash
@@ -77,7 +77,7 @@ public class FakeOpponentGenerator
                 );
 
                 record.Party[1] = factory.CreatePokemon(pokedex,
-                    223, // Remoraid
+                    223, 0, // Remoraid
                     3134, // Chesto
                     [
                         60, // Psybeam
@@ -93,7 +93,7 @@ public class FakeOpponentGenerator
                 );
 
                 record.Party[2] = factory.CreatePokemon(pokedex,
-                    349, // Feebas
+                    349, 0, // Feebas
                     3134, // Chesto
                     [
                         150, // Splash
@@ -133,7 +133,7 @@ public class FakeOpponentGenerator
 
             case 1:
                 record.Party[0] = factory.CreatePokemon(pokedex,
-                    376, // Metagross
+                    376, 0, // Metagross
                     268, // Expert belt
                     [
                         89, // EQ
@@ -149,7 +149,7 @@ public class FakeOpponentGenerator
                 );
 
                 record.Party[1] = factory.CreatePokemon(pokedex,
-                    282, // Gardevoir
+                    282, 0, // Gardevoir
                     297, // Choice specs
                     [
                         94, // Psychic
@@ -165,7 +165,7 @@ public class FakeOpponentGenerator
                 );
 
                 record.Party[2] = factory.CreatePokemon(pokedex,
-                    134, // Vaporeon
+                    134, 0, // Vaporeon
                     234, // Leftovers
                     [
                         57, // Surf
@@ -205,7 +205,7 @@ public class FakeOpponentGenerator
 
             case 2:
                 record.Party[0] = factory.CreatePokemon(pokedex,
-                    392, // Infernape
+                    392, 0, // Infernape
                     275, // Focus sash
                     [
                         252, // Fake out
@@ -221,7 +221,7 @@ public class FakeOpponentGenerator
                 );
 
                 record.Party[1] = factory.CreatePokemon(pokedex,
-                    235, // Smeargle
+                    235, 0, // Smeargle
                     210, // Custap
                     [
                         147, // Spore
@@ -237,7 +237,7 @@ public class FakeOpponentGenerator
                 );
 
                 record.Party[2] = factory.CreatePokemon(pokedex,
-                    365, // Walrein
+                    365, 0, // Walrein
                     217, // Quick claw
                     [
                         156, // Rest
@@ -277,7 +277,7 @@ public class FakeOpponentGenerator
 
             case 3:
                 record.Party[0] = factory.CreatePokemon(pokedex,
-                    248, // Tyranitar
+                    248, 0, // Tyranitar
                     189, // Chople
                     [
                         446, // Stealth rock
@@ -293,7 +293,7 @@ public class FakeOpponentGenerator
                 );
 
                 record.Party[1] = factory.CreatePokemon(pokedex,
-                    212, // Scizor
+                    212, 0, // Scizor
                     270, // Life orb
                     [
                         418, // Bullet punch
@@ -309,7 +309,7 @@ public class FakeOpponentGenerator
                 );
 
                 record.Party[2] = factory.CreatePokemon(pokedex,
-                    485, // Heatran
+                    485, 0, // Heatran
                     234, // Leftovers
                     [
                         436, // Lava plume
@@ -350,7 +350,7 @@ public class FakeOpponentGenerator
 
             case 4:
                 record.Party[0] = factory.CreatePokemon(pokedex,
-                    460, // Abomasnow
+                    460, 0, // Abomasnow
                     287, // Scarf
                     [
                         59, // Blizzard
@@ -368,7 +368,7 @@ public class FakeOpponentGenerator
                 );
 
                 record.Party[1] = factory.CreatePokemon(pokedex,
-                    471, // Glaceon
+                    471, 0, // Glaceon
                     246, // Nevermeltice
                     [
                         59, // Blizzard
@@ -384,7 +384,7 @@ public class FakeOpponentGenerator
                 );
 
                 record.Party[2] = factory.CreatePokemon(pokedex,
-                    461, // Weavile
+                    461, 0, // Weavile
                     275, // Focus sash
                     [
                         14, // Swords dance
@@ -424,7 +424,7 @@ public class FakeOpponentGenerator
 
             case 5:
                 record.Party[0] = factory.CreatePokemon(pokedex,
-                    437, // Bronzong
+                    437, 0, // Bronzong
                     234, // Leftovers
                     [
                         433, // Trick room
@@ -440,7 +440,7 @@ public class FakeOpponentGenerator
                 );
 
                 record.Party[1] = factory.CreatePokemon(pokedex,
-                    464, // Rhyperior
+                    464, 0, // Rhyperior
                     270, // Life orb
                     [
                         89, // EQ
@@ -456,7 +456,7 @@ public class FakeOpponentGenerator
                 );
 
                 record.Party[2] = factory.CreatePokemon(pokedex,
-                    462, // Magnezone
+                    462, 0, // Magnezone
                     268, // Expert belt
                     [
                         237, // Hidden power
@@ -496,7 +496,7 @@ public class FakeOpponentGenerator
 
             case 6:
                 record.Party[0] = factory.CreatePokemon(pokedex,
-                    65, // Alakazam
+                    65, 0, // Alakazam
                     275, // Focus sash
                     [
                         269, // Taunt
@@ -512,7 +512,7 @@ public class FakeOpponentGenerator
                 );
 
                 record.Party[1] = factory.CreatePokemon(pokedex,
-                    445, // Garchomp
+                    445, 0, // Garchomp
                     270, // Life orb
                     [
                         14, // Swords dance
@@ -528,7 +528,7 @@ public class FakeOpponentGenerator
                 );
 
                 record.Party[2] = factory.CreatePokemon(pokedex,
-                    242, // Blissey
+                    242, 0, // Blissey
                     234, // Leftovers
                     [
                         135, // Softboiled
@@ -568,7 +568,7 @@ public class FakeOpponentGenerator
 
             case 7:
                 record.Party[0] = factory.CreatePokemon(pokedex,
-                    9, // Blastoise
+                    9, 0, // Blastoise
                     234, // Leftovers
                     [
                         57, // Surf
@@ -584,7 +584,7 @@ public class FakeOpponentGenerator
                 );
 
                 record.Party[1] = factory.CreatePokemon(pokedex,
-                    389, // Torterra
+                    389, 0, // Torterra
                     287, // Choice scarf
                     [
                         452, // Wood hammer
@@ -600,7 +600,7 @@ public class FakeOpponentGenerator
                 );
 
                 record.Party[2] = factory.CreatePokemon(pokedex,
-                    324, // Torkoal
+                    324, 0, // Torkoal
                     217, // Quick claw
                     [
                         133, // Amnesia
@@ -647,7 +647,8 @@ public abstract class FakeOpponentFactory
 {
     public abstract BattleTowerRecordBase CreateRecord(Pokedex pokedex);
 
-    public abstract BattleTowerPokemonBase CreatePokemon(Pokedex pokedex, ushort species, ushort held_item, ushort[] moveset,
+    public abstract BattleTowerPokemonBase CreatePokemon(Pokedex pokedex, 
+        ushort species, byte form, ushort held_item, ushort[] moveset,
         uint ot, uint personality, uint ivs, byte[] evs, byte pp_ups,
         Languages language, byte ability, byte happiness, string nickname);
 
@@ -673,13 +674,14 @@ public class FakeOpponentFactory4 : FakeOpponentFactory
     }
 
     public override BattleTowerPokemonBase CreatePokemon(Pokedex pokedex,
-        ushort species, ushort held_item, ushort[] moveset, uint ot,
+        ushort species, byte form, ushort held_item, ushort[] moveset, uint ot,
         uint personality, uint ivs, byte[] evs, byte pp_ups,
         Languages language, byte ability, byte happiness,
         string nickname)
     {
         return new BattleTowerPokemon4(pokedex,
                     species,
+                    form,
                     held_item,
                     moveset,
                     ot, personality,
@@ -731,13 +733,14 @@ public class FakeOpponentFactory5 : FakeOpponentFactory
     }
 
     public override BattleTowerPokemonBase CreatePokemon(Pokedex pokedex,
-        ushort species, ushort held_item, ushort[] moveset, uint ot,
+        ushort species, byte form, ushort held_item, ushort[] moveset, uint ot,
         uint personality, uint ivs, byte[] evs, byte pp_ups,
         Languages language, byte ability, byte happiness,
         string nickname)
     {
         return new BattleSubwayPokemon5(pokedex,
                     species,
+                    form,
                     held_item,
                     moveset,
                     ot, personality,

@@ -5,8 +5,6 @@ using PkmnFoundations.Pokedex;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.AddServiceDefaults();
-
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -23,8 +21,6 @@ builder.Services.AddSingleton<Pokedex>(x =>
 builder.Services.AddTransient<FakeOpponentGenerator>();
 
 var app = builder.Build();
-
-app.MapDefaultEndpoints();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
