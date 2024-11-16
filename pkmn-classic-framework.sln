@@ -1,7 +1,7 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32126.315
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "library\Library.csproj", "{408EFC7E-C6B0-4160-8628-2679E34385CE}"
 EndProject
@@ -28,6 +28,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web", "web\web.csproj", "{3DE4D97F-57A8-4324-B5B8-164B45E2DF9A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenameImages", "RenameImages\RenameImages.csproj", "{D8787475-2D21-4E60-9320-13FA55C979AC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gtsCore", "gtsCore\gtsCore.csproj", "{181CB936-1DFC-45ED-BC09-CB9835BC08CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamestatsBaseCore", "GamestatsBase\GamestatBaseCore\GamestatsBaseCore.csproj", "{C3C34D16-8702-4801-B14F-33FCDCF0FC25}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A0D01A86-7F0C-44C4-9B44-8E45C116590B}"
 	ProjectSection(SolutionItems) = preProject
@@ -179,6 +183,30 @@ Global
 		{D8787475-2D21-4E60-9320-13FA55C979AC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{D8787475-2D21-4E60-9320-13FA55C979AC}.Release|x86.ActiveCfg = Release|Any CPU
 		{D8787475-2D21-4E60-9320-13FA55C979AC}.Release|x86.Build.0 = Release|Any CPU
+		{181CB936-1DFC-45ED-BC09-CB9835BC08CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{181CB936-1DFC-45ED-BC09-CB9835BC08CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{181CB936-1DFC-45ED-BC09-CB9835BC08CB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{181CB936-1DFC-45ED-BC09-CB9835BC08CB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{181CB936-1DFC-45ED-BC09-CB9835BC08CB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{181CB936-1DFC-45ED-BC09-CB9835BC08CB}.Debug|x86.Build.0 = Debug|Any CPU
+		{181CB936-1DFC-45ED-BC09-CB9835BC08CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{181CB936-1DFC-45ED-BC09-CB9835BC08CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{181CB936-1DFC-45ED-BC09-CB9835BC08CB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{181CB936-1DFC-45ED-BC09-CB9835BC08CB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{181CB936-1DFC-45ED-BC09-CB9835BC08CB}.Release|x86.ActiveCfg = Release|Any CPU
+		{181CB936-1DFC-45ED-BC09-CB9835BC08CB}.Release|x86.Build.0 = Release|Any CPU
+		{C3C34D16-8702-4801-B14F-33FCDCF0FC25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C34D16-8702-4801-B14F-33FCDCF0FC25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C34D16-8702-4801-B14F-33FCDCF0FC25}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C3C34D16-8702-4801-B14F-33FCDCF0FC25}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C3C34D16-8702-4801-B14F-33FCDCF0FC25}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C3C34D16-8702-4801-B14F-33FCDCF0FC25}.Debug|x86.Build.0 = Debug|Any CPU
+		{C3C34D16-8702-4801-B14F-33FCDCF0FC25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C34D16-8702-4801-B14F-33FCDCF0FC25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3C34D16-8702-4801-B14F-33FCDCF0FC25}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C3C34D16-8702-4801-B14F-33FCDCF0FC25}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C3C34D16-8702-4801-B14F-33FCDCF0FC25}.Release|x86.ActiveCfg = Release|Any CPU
+		{C3C34D16-8702-4801-B14F-33FCDCF0FC25}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

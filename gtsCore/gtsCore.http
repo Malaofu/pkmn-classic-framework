@@ -1,0 +1,66 @@
+@gtsCore_HostAddress = https://localhost:7172
+@pid = 602494066
+
+###
+
+GET {{gtsCore_HostAddress}}/admin/Sessions
+
+###
+
+@path1 = /pokemondpds/common/setProfile.asp
+
+GET {{gtsCore_HostAddress}}{{path1}}?pid={{pid}}
+User-Agent: GameSpyHTTP/1.0
+Connection: close
+
+###
+
+GET {{gtsCore_HostAddress}}/admin/Session?pid={{pid}}&url={{path1}}
+
+###
+@hash1 = 90872965b59d1447cb2091b467450b70ca83af7e
+@data1 = SjsmPdC0S8eqxq4q44SemCw_sp34FonNud7-ecUpIRMk2v_BI6S32RSGyP1OEcDwscUkufk1Wn4nh5AFbCjgjndFwPQCi64FmCEaIKrklA7T4zgiaBtXlUR0aB3T_C_NXmQtMpa6SKxlZr0K
+
+GET {{gtsCore_HostAddress}}{{path1}}?pid={{pid}}&hash={{hash1}}&data={{data1}}
+User-Agent: GameSpyHTTP/1.0
+Connection: close
+
+###
+
+@path2 = /pokemondpds/worldexchange/info.asp
+
+GET {{gtsCore_HostAddress}}{{path2}}?pid={{pid}}
+User-Agent: GameSpyHTTP/1.0
+Connection: close
+
+###
+
+GET {{gtsCore_HostAddress}}/admin/Session?pid={{pid}}&url={{path2}}
+
+###
+@hash2 = bb48b126cbd3368d12eeea451f2ac036b9e6132f
+@data2 = Sjstz-j8gjo=
+
+GET {{gtsCore_HostAddress}}{{path2}}?pid={{pid}}&hash={{hash2}}&data={{data2}}
+User-Agent: GameSpyHTTP/1.0
+Connection: close
+
+###
+
+@path3 = /pokemondpds/worldexchange/result.asp
+
+GET {{gtsCore_HostAddress}}{{path3}}?pid={{pid}}
+User-Agent: GameSpyHTTP/1.0
+Connection: close
+
+###
+
+GET {{gtsCore_HostAddress}}/admin/Session?pid={{pid}}&url={{path3}}
+
+###
+@hash3 = 24b4199c602904ffbcdd13bc1b97cc00886112b8
+@data3 = Sjstz-j8gjo=
+
+GET {{gtsCore_HostAddress}}{{path3}}?pid={{pid}}&hash={{hash3}}&data={{data3}}
+User-Agent: GameSpyHTTP/1.0
+Connection: close
